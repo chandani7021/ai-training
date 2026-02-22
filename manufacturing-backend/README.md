@@ -129,24 +129,6 @@ The worker picks up background jobs (training generation) from Redis.
 
 ---
 
-## Seeding the First Users
-
-Use the `/auth/register` endpoint (or Swagger UI at `/docs`):
-
-```bash
-# Create an admin
-curl -s -X POST http://localhost:8000/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{"email": "admin@factory.com", "password": "admin123", "role": "admin"}'
-
-# Create an employee
-curl -s -X POST http://localhost:8000/auth/register \
-  -H "Content-Type: application/json" \
-  -d '{"email": "employee@factory.com", "password": "emp123", "role": "employee"}'
-```
-
----
-
 ## API Endpoints
 
 ### Auth
